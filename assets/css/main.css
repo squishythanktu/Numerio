@@ -1,0 +1,110 @@
+/* About Section */
+
+.about {
+    display: flex;
+}
+
+.about-content {
+    padding-top: 3rem;
+    width: 45%;
+}
+
+.about__sub-heading {
+    position: relative;
+    text-transform: uppercase;
+    color: var(--main-pink-color);
+    padding: 0 0 0.7rem 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+}
+
+.about__sub-heading::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    left: 5px;
+    top: 6.5px;
+    border-radius: 50%;
+    border: 2px solid #FB5472;
+    vertical-align: middle;
+    margin: 10px 0.6rem 12px 0;
+}
+
+.about__heading {
+    font-size: 3.5rem;
+    line-height: 100%;
+    font-weight: 900;
+    margin-top: .15rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-blue-color);
+    font-family: 'Aleo', serif;
+}
+
+.about__introduction {
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.about__sub-introduction {
+    padding: 0.67rem 0;
+}
+
+.about-btn.btn {
+    margin-top: 50px;
+}
+
+.h-decor-1, .h-decor-2, .h-decor-3 {
+    position: relative;
+    padding: 0 5.6rem;
+}
+
+.h-decor-1::before {
+    position: absolute;
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    left: 2.8%;
+    margin-right: 4.5rem;
+    top: 30%;
+    background: url('https://my-space.space/numerio/img/leaf-left.svg') no-repeat;
+    background-size: contain;
+}
+
+.h-decor-1::after {
+    position: absolute;
+    content: '';
+    width: 5.5rem;
+    height: 5rem;
+    right: 4.2%;
+    top: 30%;
+    margin-left: 4.5rem;
+    background: url(https://my-space.space/numerio/img/leaf-right.svg) no-repeat;
+    background-size: contain;
+}
+
+.h-decor-2::before {
+    position: absolute;
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    left: 10.8%;
+    margin-right: 4.5rem;
+    top: -10%;
+    background: url('https://my-space.space/numerio/img/leaf-left.svg') no-repeat;
+    background-size: contain;
+}
+
+.h-decor-3::after {
+    position: absolute;
+    content: '';
+    width: 5.5rem;
+    height: 5rem;
+    right: 12.2%;
+    top: 30%;
+    margin-left: 4.5rem;
+    background: url(https://my-space.space/numerio/img/leaf-right.svg) no-repeat;
+    background-size: contain;
+}
