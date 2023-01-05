@@ -146,7 +146,7 @@ body {
 }
 
 .nav-logo img {
-    height: 3rem;
+    height: 3.15rem;
 }
 
 .nav-section {
@@ -1036,6 +1036,44 @@ body {
     margin-top: 12rem;
 }
 
+.testimonial-section__bg {
+    width: calc(100% - 28.5rem);
+    padding-right: 3rem;
+}
+
+.testimonial-content {
+    width: 28.5rem;
+    /* padding-top: 1rem; */
+    padding-bottom: 0.7rem;
+}
+
+.testimonial-content i {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.slideshow-container {
+
+}
+
+.testimonial__author {
+    display: flex;
+    margin-top: 1.2rem;
+}
+
+.testimonial__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.author__name {
+    color: var(--main-blue-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /* Blog Section */
 
 .blog-section {
@@ -1099,6 +1137,7 @@ body {
 }
 
 .news__content {
+    background-color: #fff;
     padding: 1.1rem 7.2% 2.38rem;
 }
 
@@ -1139,12 +1178,12 @@ body {
 /* Footer */
 
 .footer {
-    /* position: relative;
+    position: relative;
     padding: 8.75rem 0 1rem;
     flex-shrink: 0;
     order: 3;
+    background-size: cover;
     z-index: 0;
-    background-size: cover; */
 }
 
 .footer-2 {
@@ -1154,4 +1193,29 @@ body {
 .footer__bg {
     margin-top: -17rem;
     z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://my-space.space/numerio/img/bg/footer-2.svg');
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.footer-bottom {
+    border-top: 1px solid #DBDFF3;
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+}
+
+.copyrights {
+    font-size: 0.9rem;
+    line-height: 170%;
+    color: #646A89;
+}
+
+.footer .header-social, .footer .header-contact {
+    margin-left: -4.5rem;
 }

@@ -108,3 +108,14 @@
     background: url(https://my-space.space/numerio/img/leaf-right.svg) no-repeat;
     background-size: contain;
 }
+
+/* Fading animation */
+.fade-animation {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+}
