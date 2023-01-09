@@ -1,19 +1,33 @@
-/* About Section */
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1220px;
+    padding-right: 2.2rem;
+    padding-left: 2.2rem;
+    margin: 0 auto;
+}
 
+.nav-section a.active{
+    color: var(--main-pink-color); 
+}
+
+/* About Section */
 .about {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-content {
     padding-top: 3rem;
-    width: 45%;
+    width: 40%;
 }
 
 .about__sub-heading {
     position: relative;
     text-transform: uppercase;
     color: var(--main-pink-color);
-    padding: 0 0 0.7rem 0;
+    padding: 0 0 0.3rem 0;
     font-weight: bold;
     font-size: 0.9rem;
     line-height: 150%;
@@ -53,7 +67,7 @@
 }
 
 .about-btn.btn {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .h-decor-1, .h-decor-2, .h-decor-3 {
@@ -110,6 +124,12 @@
 }
 
 /* Fading animation */
+
+/* .mySlides {
+    font-size: 1.37rem;
+    line-height: 150%;
+} */
+
 .fade-animation {
     animation-name: fade;
     animation-duration: 2.5s;

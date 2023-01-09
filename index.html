@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Numerio</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
 
             <!-- Services Section -->
 
-            <div class="services-section">
+            <div class="services-section" id="services">
                 <div class="wrapper">
                     <div class="services-list">
                         <div class="services__item">
@@ -108,7 +109,7 @@
             </div>
 
             <!-- About Section -->
-            <div class="history-section">
+            <div class="history-section" id="about">
                 <div class="wrapper d-flex flex-column">
                     <!-- About History -->
                     <div class="about"> 
@@ -122,7 +123,7 @@
                                 Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.
                             </p>
                             
-                            <p class="about__sub-introduction">
+                            <p class="history__sub-introduction about__sub-introduction">
                                 Dolor duis voluptate enim exercitation consequat ex. Voluptate in sunt commodo aute do. Dolor enim dolor labore velit nulla sit exercitation irure esse proident velit commodo. Est non officia proident esse culpa commodo nulla Lorem do enderit esse do.
                             </p>
                             <a href="#" class="history__video-section">
@@ -139,28 +140,28 @@
 
                     <!-- History Details -->
                     <div class="history-details">
-                        <div class="history-detais__item">
-                            <div class="history-detais__num">$ 35k <span>+</span></div>
-                            <div class="history-detais__text">Client Revenue</div>
-                            <div class="history-detais__decor"></div>
+                        <div class="history-details__item">
+                            <div class="history-details__num">$ 35k <span>+</span></div>
+                            <div class="history-details__text">Client Revenue</div>
+                            <div class="history-details__decor"></div>
                         </div>
                         
-                        <div class="history-detais__item">
-                            <div class="history-detais__num">16k <span>+</span></div>
-                            <div class="history-detais__text">Leads for clients</div>
-                            <div class="history-detais__decor"></div>
+                        <div class="history-details__item">
+                            <div class="history-details__num">16k <span>+</span></div>
+                            <div class="history-details__text">Leads for clients</div>
+                            <div class="history-details__decor"></div>
                         </div>
 
-                        <div class="history-detais__item">
-                            <div class="history-detais__num">6.7k <span>+</span></div>
-                            <div class="history-detais__text">Phone calls</div>
-                            <div class="history-detais__decor"></div>
+                        <div class="history-details__item">
+                            <div class="history-details__num">6.7k <span>+</span></div>
+                            <div class="history-details__text">Phone calls</div>
+                            <div class="history-details__decor"></div>
                         </div>
 
-                        <div class="history-detais__item">
-                            <div class="history-detais__num">254<span>+</span></div>
-                            <div class="history-detais__text">Successful projects</div>
-                            <div class="history-detais__decor"></div>
+                        <div class="history-details__item">
+                            <div class="history-details__num">254<span>+</span></div>
+                            <div class="history-details__text">Successful projects</div>
+                            <div class="history-details__decor"></div>
                         </div>
                     </div>
                 </div>
@@ -328,7 +329,7 @@
             </div>
 
             <!-- Steps Section -->
-            <div class="steps-section">
+            <div class="steps-section" id="steps">
                 <div class="wrapper d-flex justify-content-center flex-column">
                     <p class="about__sub-heading text-center">Steps</p>
                     <div class="h-decor-2">
@@ -375,7 +376,7 @@
             </div>
 
             <!-- Prices Section -->
-            <div class="prices-section">
+            <div class="prices-section" id="price">
                 <div class="wrapper d-flex justify-content-center flex-column">
                     <p class="about__sub-heading text-center">Prices</p>
                     <div class="h-decor-3">
@@ -405,7 +406,7 @@
                                     <li>Copywriter & Visual Design</li>
                                 </ul>
                                 <div class="prices__btn">
-                                    <span class="btn-buy">buy now</span>
+                                    <span class="btn-buy btn">buy now</span>
                                 </div>
                             </div>
                         </div>
@@ -432,7 +433,7 @@
                                     <li>Social Media Listening</li>
                                 </ul>
                                 <div class="prices__btn">
-                                    <span class="btn-buy">buy now</span>
+                                    <span class="btn-buy btn">buy now</span>
                                 </div>
                                 <div class="prices__recommend">
                                     <span class="checkbox-text">Recomended</span>
@@ -460,7 +461,7 @@
                                     <li>Copywriter & Visual Design</li>
                                 </ul>
                                 <div class="prices__btn">
-                                    <span class="btn-buy">buy now</span>
+                                    <span class="btn-buy btn">buy now</span>
                                 </div>
                             </div>
                         </div>
@@ -502,10 +503,12 @@
             </div>
 
             <!-- Testimonials Section -->
-            <div class="testimonial-section">
+            <div class="testimonial-section" id="testimonials">
                 <div class="wrapper d-flex align-items-center justify-content-between">
-                    <div class="testimonial-section__bg">
-                        <img src="https://my-space.space/numerio/img/testimonials.svg" alt="">
+                    <div class="testimonial-section__img">
+                        <div class="testimonial-section__picture">
+                            <img src="https://my-space.space/numerio/img/testimonials.svg" alt="">
+                        </div>
                     </div>
                     <div class="testimonial-content">
                         <p class="testimonial__sub-heading about__sub-heading">They say</p>
@@ -543,7 +546,7 @@
             </div>
 
             <!-- Blog Section -->
-            <div class="blog-section">
+            <div class="blog-section" id="blog">
                 <div class="wrapper d-flex flex-column align-items-center">
                     <p class="about__sub-heading text-center">News</p>
                     <h2 class="about__heading text-center">Read Our Blog</h2>
@@ -594,26 +597,28 @@
 
         <!-- Header -->
         <header class="header">
-            <div class="header-top d-flex justify-content-between align-items-center pt-1 pb-2">
-                <div class="header-social d-flex">
-                    <p class="header-top__title">Find us here:</p>
-                    <ul class="header-social__items list-unstyled d-flex align-items-center">
-                        <li class="header-social__item">
-                            <a href="" class="social_link">Fb</a>
-                        </li>
-                        <li class="header-social__item">
-                            <a href="" class="social_link">Ins</a>
-                        </li>
-                        <li class="header-social__item">
-                            <a href="" class="social_link">In</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="header-contact d-flex align-items-center">
-                    <p class="header-top__title">Have a question? Call us!</p>
-                    <i class='bx bx-phone'></i>
-                    <a href="tel:+15469872185">+1 546 987 21 85</a>
+            <div class="header-top d-flex justify-content-between align-items-center">
+                <div class="wrapper">
+                    <div class="header-social d-flex">
+                        <p class="header-top__title">Find us here:</p>
+                        <ul class="header-social__items list-unstyled d-flex align-items-center">
+                            <li class="header-social__item">
+                                <a href="" class="social_link">Fb</a>
+                            </li>
+                            <li class="header-social__item">
+                                <a href="" class="social_link">Ins</a>
+                            </li>
+                            <li class="header-social__item">
+                                <a href="" class="social_link">In</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="header-contact d-flex align-items-center">
+                        <p class="header-top__title">Have a question? Call us!</p>
+                        <i class='bx bx-phone'></i>
+                        <a href="tel:+15469872185">+1 546 987 21 85</a>
+                    </div>
                 </div>
             </div>
 
@@ -624,12 +629,12 @@
 
                 <div class="nav-right d-flex align-items-center">
                     <ul class="nav-category list-unstyled d-flex">
-                        <li class="nav-section">Services</li>
-                        <li class="nav-section">About</li>
-                        <li class="nav-section">Steps</li>
-                        <li class="nav-section">Price</li>
-                        <li class="nav-section">Testimonials</li>
-                        <li class="nav-section">Blog</li>
+                        <li class="nav-section active"><a href="#services">Services</a></li>
+                        <li class="nav-section"><a href="#about">About</a></li>
+                        <li class="nav-section"><a href="#steps">Steps</a></li>
+                        <li class="nav-section"><a href="#price">Price</a></li>
+                        <li class="nav-section"><a href="#testimonials">Testimonials</a></li>
+                        <li class="nav-section"><a href="#blog">Blog</a></li>
                     </ul>
                     <div class="get-started-btn">Get Started</div>
                 </div>

@@ -62,23 +62,24 @@ body {
     background: rgba(255, 255, 255, 0.99);
 }
 
+.header .wrapper {
+    max-width: 1840px;
+}
+
 /* Header - Header top */
 
 .header-top {
     border: 1px solid rgba(61, 93, 130, 0.1);
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    /* padding-left: 2.4rem;
+    padding-right: 2.4rem; */
 }
 
-
-.wrapper {
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    max-width: 1220px;
-    padding-right: 2.2rem;
-    padding-left: 2.2rem;
-    margin: 0 auto;
+.header-top .wrapper {
+    padding-top: .125rem;
+    padding-bottom: .31rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-top__title {
@@ -141,8 +142,8 @@ body {
 
 .header-nav {
     max-width: 1840px;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
 }
 
 .nav-logo img {
@@ -154,7 +155,25 @@ body {
     cursor: pointer;
 }
 
-.nav-section:hover {
+.nav-section a {
+    position: relative;
+}
+
+.nav-section a.active::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    left: 50%;
+    top: -40%;
+    border-radius: 50%;
+    border: 2px solid #FB5472;
+    vertical-align: middle;
+    transform: scale(1) translate(-50%, 0);
+}
+
+.nav-section a:hover {
     color: var(--main-pink-color);
 }
 
@@ -171,6 +190,7 @@ body {
     font-size: 1rem;
     text-transform: capitalize;
     transition: background .4s ease;
+    white-space: nowrap;
 }
 
 .get-started-btn:hover {
@@ -212,6 +232,7 @@ body {
 
 .hero-content {
     padding: 5rem 0 19.5rem;
+    width: 45%;
 }
 
 .hero__sub-heading {
@@ -220,7 +241,7 @@ body {
 
 .hero__heading {
     font-size: 4.4rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.1rem;
 }
 
 .hero__introduction {
@@ -278,6 +299,7 @@ body {
     margin: 0 0.95rem 1.68rem;
     background-color: #fff;
     width: calc(25% - 2rem);
+    height: fit-content;
     overflow: hidden;
     box-shadow: 0px 0.56rem 1.46rem rgb(36 73 168 / 15%);
 }
@@ -297,10 +319,13 @@ body {
 
 .services__icon {
     position: relative;
-    height: 4rem;
+    height: 4.4rem;
 }
 
 .services__icon img {
+    max-height: 100%;
+    height: auto;
+    width: auto;
 }
 
 .services__title {
@@ -333,9 +358,15 @@ body {
 }
 
 .about-img {
-    width: calc(100% - 25.5rem);
+    width: 60%;
     padding-right: 2.5rem;
     padding-left: 2%;
+}
+
+.about-img img {
+    width: 88%; 
+    height: 100%; 
+    object-fit: contain;
 }
 
 .history__video-section {
@@ -411,17 +442,20 @@ body {
     flex-wrap: wrap;
 }
 
-.history-detais__item {
+.history-details__item {
     position: relative;
     width: 25%;
     padding: 0 0.85rem;
     margin-bottom: 1.69rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    min-height: 8rem;
 }
 
-.history-detais__num {
+.history-details__num {
+    position: relative;
     display: flex;
     font-size: 3.4rem;
     line-height: 110%;
@@ -430,13 +464,13 @@ body {
     color: var(--main-blue-color)
 }
 
-.history-detais__num  span {
+.history-details__num  span {
     font-size: 2rem;
     padding-left: 0.2rem;
     color: var(--main-pink-color);
 }
 
-.history-detais__text {
+.history-details__text {
     position: relative;
     font-weight: bold;
     font-size: 0.9rem;
@@ -445,13 +479,12 @@ body {
     text-transform: uppercase;
 }
 
-.history-detais__decor {
+.history-details__decor {
     position: absolute;
     width: 9.4rem;
     height: 9.4rem;
     border-radius: 50%;
-    left: 24%;
-    top: -10%;
+    top: 0;
     z-index: -1;
     border: 2.6rem solid rgba(219, 223, 243, 0.3);
 }
@@ -472,6 +505,7 @@ body {
 .get-item {
     position: relative;
     width: calc(33.33% - 1.69rem);
+    height: fit-content;
     padding: 2.25rem 1.65rem;
     margin: 0 0.8rem 2rem;
     border-radius: 0.56rem;
@@ -681,7 +715,7 @@ body {
     align-items: center;
     justify-content: center;
     width: calc(20% - 1.69rem);
-    height: 12.8rem;
+    aspect-ratio: 1 / 1;
     align-items: center;
     margin: 0 0.85rem 1.7rem;
     background: #fff;
@@ -693,10 +727,15 @@ body {
     transform: translateY(-3.9rem);
 }
 
+.logo-item img {
+    max-height: 82%;
+    max-width: 82%;
+}
+
 /* Steps Section */
 
 .steps-section {
-    margin-top: 9.5rem;
+    margin-top: 8.5rem;
 }
 
 .main-steps {
@@ -915,11 +954,13 @@ body {
 .prices__list {
     list-style: none;
     flex-direction: column;
+    line-height: 170%;
+    font-size: 1.03rem;
 }
 
 .prices-list li {
     margin-bottom: 0.45rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .prices__btn {
@@ -987,7 +1028,7 @@ body {
     top: -6.3rem;
     right: 0;
     bottom: 0;
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
@@ -1007,6 +1048,19 @@ body {
     width: 58.8%;
 }
 
+.newsletter__img {
+    width: 41.2%;
+}
+
+.newsletter__picture {
+    margin-left: -2%;
+    margin-right: -6%;
+}
+
+.newsletter__picture img {
+    width: 100%;
+}
+
 .form-field.email-field {
     width: calc(100% - 8.5rem);
     padding-right: 1.25rem;
@@ -1024,7 +1078,7 @@ body {
 }
 
 .about__sub-introduction.newsletter__text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 170%;
     max-width: 85%;
 }
@@ -1036,13 +1090,20 @@ body {
     margin-top: 12rem;
 }
 
-.testimonial-section__bg {
-    width: calc(100% - 28.5rem);
-    padding-right: 3rem;
+.testimonial-section__img {
+    width: calc(100% - 27rem);
+    padding-right: 2.5rem;
+}
+
+.testimonial-section__picture {
+    margin-left: -4%;
+}
+.testimonial-section__picture img {
+    max-width: 100%;
 }
 
 .testimonial-content {
-    width: 28.5rem;
+    width: 27rem;
     /* padding-top: 1rem; */
     padding-bottom: 0.7rem;
 }
@@ -1143,6 +1204,7 @@ body {
 
 .news__header {
     display: flex;
+    align-items: center;
 }
 
 .news__header-child:not(:last-child):after {
@@ -1155,7 +1217,11 @@ body {
     border-radius: 50%;
     border: 2px solid #FB5472;
     vertical-align: middle;
-    margin: 0 0.8rem;
+    margin: 0 0.7rem;
+}
+
+.news__date, .news__author {
+    white-space: nowrap;
 }
 
 .news__title {
@@ -1215,6 +1281,7 @@ body {
     line-height: 170%;
     color: #646A89;
 }
+
 
 .footer .header-social, .footer .header-contact {
     margin-left: -4.5rem;
