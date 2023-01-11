@@ -159,20 +159,6 @@ body {
     position: relative;
 }
 
-.nav-section a.active::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 0.4rem;
-    height: 0.4rem;
-    left: 50%;
-    top: -40%;
-    border-radius: 50%;
-    border: 2px solid #FB5472;
-    vertical-align: middle;
-    transform: scale(1) translate(-50%, 0);
-}
-
 .nav-section a:hover {
     color: var(--main-pink-color);
 }
