@@ -1,4 +1,5 @@
 //toggle top-header
+
 window.onscroll = () => {
     const header = document.querySelector('.header');
     const headerTop = document.querySelector('.header-top');
@@ -59,3 +60,24 @@ function navHighlighter() {
     }
   });
 }
+
+//bars button click event
+
+const barsBtn = document.querySelector(".bars-btn");
+const navCategory = document.querySelector(".nav-category");
+
+barsBtn.addEventListener("click", () => {
+  barsBtn.classList.toggle("active");
+  navCategory.classList.toggle("active");
+
+  const body = document.querySelector("body");
+  if(barsBtn.classList.contains("active")) {
+    body.style.height = "100%";
+    body.style.overflowY = "hidden";
+  }
+  else {
+    body.style.height = "100vh";
+    body.style.overflowY = "scroll";
+  }
+
+})

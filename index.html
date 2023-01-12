@@ -503,14 +503,14 @@
             </div>
 
             <!-- Testimonials Section -->
-            <div class="testimonial-section" id="testimonials">
-                <div class="wrapper d-flex align-items-center justify-content-between">
-                    <div class="testimonial-section__img">
-                        <div class="testimonial-section__picture">
+            <div class="testimonials-section" id="testimonials">
+                <div class="testimonials wrapper">
+                    <div class="testimonials-section__img">
+                        <div class="testimonials-section__picture">
                             <img src="https://my-space.space/numerio/img/testimonials.svg" alt="">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonials-content">
                         <p class="testimonial__sub-heading about__sub-heading">They say</p>
                         <h2 class="testimonial__heading about__heading">Testimonials</h2>
                         <i class='bx bxs-quote-alt-right'></i>
@@ -597,9 +597,9 @@
 
         <!-- Header -->
         <header class="header">
-            <div class="header-top d-flex justify-content-between align-items-center">
+            <div class="header-top">
                 <div class="wrapper">
-                    <div class="header-social d-flex">
+                    <div class="header-social">
                         <p class="header-top__title">Find us here:</p>
                         <ul class="header-social__items list-unstyled d-flex align-items-center">
                             <li class="header-social__item">
@@ -614,7 +614,7 @@
                         </ul>
                     </div>
     
-                    <div class="header-contact d-flex align-items-center">
+                    <div class="header-contact">
                         <p class="header-top__title">Have a question? Call us!</p>
                         <i class='bx bx-phone'></i>
                         <a href="tel:+15469872185">+1 546 987 21 85</a>
@@ -622,21 +622,55 @@
                 </div>
             </div>
 
-            <div class="header-nav wrapper d-flex justify-content-between align-items-center">
+            <div class="header-nav wrapper">
                 <div class="nav-logo">
                     <img src="https://my-space.space/numerio/img/logo.svg" alt="Logo">
                 </div>
 
-                <div class=";4 d-flex align-items-center">
-                    <ul class="nav-category list-unstyled d-flex">
-                        <li class="nav-section active"><a href="#services">Services</a></li>
-                        <li class="nav-section"><a href="#about">About</a></li>
-                        <li class="nav-section"><a href="#steps">Steps</a></li>
-                        <li class="nav-section"><a href="#price">Price</a></li>
-                        <li class="nav-section"><a href="#testimonials">Testimonials</a></li>
-                        <li class="nav-section"><a href="#blog">Blog</a></li>
-                    </ul>
+                <div class="header-right d-flex align-items-center">
+                    <div class="nav-category">
+                        <div class="nav-inner">
+                            <div class="nav-section"><a href="#services">Services</a></div>
+                            <div class="nav-section"><a href="#about">About</a></div>
+                            <div class="nav-section"><a href="#steps">Steps</a></div>
+                            <div class="nav-section"><a href="#price">Price</a></div>
+                            <div class="nav-section"><a href="#testimonials">Testimonials</a></div>
+                            <div class="nav-section"><a href="#blog">Blog</a></div>
+                        </div>
+                        <div class="header-social">
+                            <p class="header-top__title">Find us here:</p>
+                            <ul class="header-social__items list-unstyled d-flex align-items-center">
+                                <li class="header-social__item">
+                                    <a href="" class="social_link">Fb</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a href="" class="social_link">Ins</a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a href="" class="social_link">In</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="header-contact">
+                            <p class="header-top__title">Have a question? Call us!</p>
+                            <i class='bx bx-phone'></i>
+                            <a href="tel:+15469872185">+1 546 987 21 85</a>
+                        </div>
+                    </div>
                     <div class="get-started-btn">Get Started</div>
+                </div>
+
+                <div class="bars-btn">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="cross">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -644,11 +678,11 @@
         <!-- Footer -->
         <footer class="footer footer-2">
             <div class="footer__bg"></div>
-            <div class="wrapper d-flex justify-content-between align-items-center">
+            <div class="wrapper">
                 <div class="nav-logo">
                     <img src="https://my-space.space/numerio/img/logo.svg" alt="Logo">
                 </div>
-                <div class="header-social d-flex">
+                <div class="header-social">
                     <p class="header-top__title">Find us here:</p>
                     <ul class="header-social__items list-unstyled d-flex align-items-center">
                         <li class="header-social__item">
@@ -662,7 +696,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-contact d-flex align-items-center">
+                <div class="header-contact">
                     <p class="header-top__title">Have a question? Call us!</p>
                     <i class="bx bx-phone"></i>
                     <a href="tel:+15469872185">+1 546 987 21 85</a>
@@ -673,14 +707,16 @@
             <div class="footer-bottom">
                 <div class="wrapper d-flex justify-content-between align-items-center">
                     <div class="copyrights">©All rights reserved. Numerio 2021</div>
-                    <ul class="nav-category list-unstyled d-flex">
-                        <li class="nav-section">Services</li>
-                        <li class="nav-section">About</li>
-                        <li class="nav-section">Steps</li>
-                        <li class="nav-section">Price</li>
-                        <li class="nav-section">Testimonials</li>
-                        <li class="nav-section" style="margin-right: 0;">Blog</li>
-                    </ul>
+                    <div class="nav-category">
+                        <div class="nav-inner">
+                            <div class="nav-section"><a href="#services">Services</a></div>
+                            <div class="nav-section"><a href="#about">About</a></div>
+                            <div class="nav-section"><a href="#steps">Steps</a></div>
+                            <div class="nav-section"><a href="#price">Price</a></div>
+                            <div class="nav-section"><a href="#testimonials">Testimonials</a></div>
+                            <div class="nav-section"><a href="#blog">Blog</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
