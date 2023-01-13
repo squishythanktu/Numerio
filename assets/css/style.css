@@ -1118,7 +1118,7 @@ body {
 .newsletter-section__bg {
     position: absolute;
     left: 0;
-    top: -6.3rem;
+    top: -7rem;
     right: 0;
     bottom: 0;
     background-size: 100% auto;
@@ -1180,7 +1180,7 @@ body {
 
 .testimonials-section {
     display: flex;
-    margin-top: rem;
+    margin-top: 11.3rem;
 }
 
 .testimonials {

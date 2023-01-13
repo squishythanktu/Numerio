@@ -12,7 +12,11 @@
   .prices-section {
     margin-top: 8.68rem;
   }
-  
+
+  .testimonials-section {
+    margin-top: 8.2rem;
+  }
+
   .testimonials-section__picture {
     max-width: 82%; 
   }
@@ -21,24 +25,27 @@
 
 @media screen and (max-width: 1280px){
   .newsletter-section__bg {
+    top: -9rem;
+    bottom: -5rem;
+  }
+
+  .newsletter-section__bg {
     background-size: auto 100%;
   }
+
   .testimonials-section__img {
     padding-right: 0;
-    }
-    .testimonials-section__picture {
+  }
+
+  .testimonials-section__picture {
       max-width: 95%; 
-    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .about__heading {
     font-size: 2.5rem;
   }
-
-  /* .history__heading {
-        font-size: 2.6rem;
-    } */
 
   .history__sub-heading {
     font-size: 0.8rem;
@@ -486,6 +493,11 @@
   .history-details__item {
     width: 50%;
     margin-bottom: 2.7rem;
+  }
+
+  .newsletter-section__bg {
+    top: -9rem;
+    bottom: 0;
   }
 
   .h-decor-1:before, .h-decor-1:after {
