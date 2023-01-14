@@ -2,12 +2,13 @@
 
 window.onscroll = () => {
     const header = document.querySelector('.header');
+    const headerTop = document.querySelector('.header-top');
     if (document.documentElement.scrollTop > 0) {
-        header.classList.add('fixed');
-        header.style.top = '-35px';
+      headerTop.classList.add('d-none');
+      header.classList.add('fixed');
     } else {
-        header.classList.remove('fixed');
-        header.style.top = 0;
+      headerTop.classList.remove('d-none');
+      header.classList.remove('fixed');
     }
 };
 

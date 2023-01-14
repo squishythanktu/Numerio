@@ -55,7 +55,6 @@ body {
     top: 0;
     right: 0;
     z-index: 100;
-    transition: top 0.2s;
 }
 
 .fixed {
