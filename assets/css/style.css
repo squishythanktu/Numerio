@@ -55,12 +55,27 @@ body {
     top: 0;
     right: 0;
     z-index: 100;
+    transition: top 0.2s;
 }
 
 .fixed {
     box-shadow: 0px 0.11rem 0.22rem rgb(0 0 0 / 6%), 0px 0.22rem 0.33rem rgb(0 0 0 / 10%);
     background: rgba(255, 255, 255, 0.99);
 }
+/* 
+
+@keyframes hidden {
+    from {
+      top: 0;
+      }
+    to {
+      top: -35px;
+  }
+}
+
+.header.hidden-top {
+    animation: hidden 0.3s ease;
+} */
 
 .header .wrapper {
     max-width: 1840px;
@@ -779,6 +794,10 @@ body {
     background-repeat: no-repeat;
     transition: background 0.3s ease-in, border 0.3s ease-in;
     background-image: url(https://my-space.space/numerio/img/icons-svg/check.svg);
+}
+
+.consultation-form__form .checkbox-text::after {
+    display: none;
 }
 
 #checkbox {
